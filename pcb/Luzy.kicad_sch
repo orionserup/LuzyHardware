@@ -251,6 +251,90 @@
         )
       )
     )
+    (symbol "Device:R_US" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (id 0) (at 2.54 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R_US" (id 1) (at -2.54 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 1.016 -0.254 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Resistor, US symbol" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_US_0_1"
+        (polyline
+          (pts
+            (xy 0 -2.286)
+            (xy 0 -2.54)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.286)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -0.762)
+            (xy 1.016 -1.143)
+            (xy 0 -1.524)
+            (xy -1.016 -1.905)
+            (xy 0 -2.286)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0.762)
+            (xy 1.016 0.381)
+            (xy 0 0)
+            (xy -1.016 -0.381)
+            (xy 0 -0.762)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.286)
+            (xy 1.016 1.905)
+            (xy 0 1.524)
+            (xy -1.016 1.143)
+            (xy 0 0.762)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+      (symbol "R_US_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Mechanical:Fiducial" (in_bom yes) (on_board yes)
       (property "Reference" "FID" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -282,6 +366,9 @@
     )
   )
 
+  (junction (at 116.84 116.84) (diameter 0) (color 0 0 0 0)
+    (uuid 090c436a-7793-449a-8df3-2f142f474dcb)
+  )
   (junction (at 88.9 140.97) (diameter 0) (color 0 0 0 0)
     (uuid 5cac208b-13a1-41c9-8a22-2860223bcca9)
   )
@@ -299,7 +386,6 @@
   )
 
   (no_connect (at 104.14 110.49) (uuid 6b7ec1b9-01bd-4ed4-8371-200447443ab4))
-  (no_connect (at 104.14 107.95) (uuid f05be67d-6a8d-4dbd-bbee-f1b0daa31bdb))
 
   (bus_entry (at 109.22 113.03) (size -2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -325,6 +411,10 @@
   (wire (pts (xy 168.91 144.78) (xy 168.91 137.16))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 138270c2-53b3-464c-bbc9-d9966ecdf0eb)
+  )
+  (wire (pts (xy 116.84 107.95) (xy 116.84 116.84))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 151fe475-71aa-4d78-a04f-0c5869658456)
   )
   (wire (pts (xy 104.14 115.57) (xy 106.68 115.57))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -354,6 +444,10 @@
   (wire (pts (xy 243.84 165.1) (xy 161.29 165.1))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 33526c5c-5356-4536-b17c-f44c564f65c1)
+  )
+  (wire (pts (xy 111.76 107.95) (xy 116.84 107.95))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 3aa41764-0a60-4de4-968f-0533ad7d1499)
   )
   (wire (pts (xy 182.88 144.78) (xy 168.91 144.78))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -591,7 +685,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4df89b69-5ce2-4d40-af07-8feb86fe4574)
     (property "Reference" "P1" (id 0) (at 88.9 95.25 0))
-    (property "Value" "USB_C_Plug_USB2.0" (id 1) (at 88.9 97.79 0))
+    (property "Value" "USB4105" (id 1) (at 88.9 97.79 0))
     (property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (id 2) (at 92.71 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -662,6 +756,21 @@
     (property "Datasheet" "~" (id 3) (at 93.98 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+  )
+
+  (symbol (lib_id "Device:R_US") (at 107.95 107.95 90) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid ffc41b3e-316d-4bfa-8860-4ec326dd98a9)
+    (property "Reference" "R11" (id 0) (at 106.68 105.41 90))
+    (property "Value" "5.1k" (id 1) (at 113.03 105.41 90))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 108.204 106.934 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 107.95 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c848b6bc-bcb9-4c48-aab3-9db3c5c4809b))
+    (pin "2" (uuid e062a67e-d676-4ff6-b6c4-eba735adf535))
   )
 
   (sheet (at 182.88 97.79) (size 39.37 24.13) (fields_autoplaced)
@@ -908,6 +1017,24 @@
     (path "/9ce07a06-3e7b-4705-bb5d-f28af1161e98/13add24c-34e2-4da3-90ac-2edcc37d7701"
       (reference "C15") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
+    (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/040d660e-0da2-4393-b867-d62a0d40cad2"
+      (reference "C16") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/ad27b074-4394-4b93-acec-7ae8503c74fe"
+      (reference "C17") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/5a3f7a59-a7bf-472d-b645-91734ce35845"
+      (reference "C18") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/63cb34f9-f7e2-4fcb-b87f-0e5c9061fb98"
+      (reference "C19") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/ee130731-ca4d-412a-a0cf-1e69dd5943cf"
+      (reference "C20") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/0db83172-c75b-4dcd-b74e-6b1f6351517b"
+      (reference "C21") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
     (path "/54bacbbb-02d1-4613-bfdf-11b57bde41e8/bcf74baf-c0d1-452a-a827-abc8b420747e/33821246-dc99-4e61-b079-c5191c6fd2ff"
       (reference "D1") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
@@ -990,7 +1117,7 @@
       (reference "L2") (unit 1) (value "2.2uH") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/4df89b69-5ce2-4d40-af07-8feb86fe4574"
-      (reference "P1") (unit 1) (value "USB_C_Plug_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12")
+      (reference "P1") (unit 1) (value "USB4105") (footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12")
     )
     (path "/9bc63292-e9e9-4582-96af-b0c9b7aaa583/6ce7849d-bc5b-41e3-8e9a-5a2cdd38b10c"
       (reference "R1") (unit 1) (value "500") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -1022,17 +1149,20 @@
     (path "/9ce07a06-3e7b-4705-bb5d-f28af1161e98/43e3f674-77f9-44f5-a9c1-4318b5a22eca"
       (reference "R10") (unit 1) (value "16.9k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
+    (path "/ffc41b3e-316d-4bfa-8860-4ec326dd98a9"
+      (reference "R11") (unit 1) (value "5.1k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
     (path "/d76a4419-8eae-4607-a1e1-7beba823a94f/070b97fb-efd5-4cb8-8673-c3fe7d1f8968"
-      (reference "SW1") (unit 1) (value "POWER/MODE") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
+      (reference "SW1") (unit 1) (value "KMR211") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
     )
     (path "/d76a4419-8eae-4607-a1e1-7beba823a94f/95da8198-6a54-4b4a-ad9e-1e39528fe9b2"
-      (reference "SW2") (unit 1) (value "LEFT") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
+      (reference "SW2") (unit 1) (value "KMR211") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
     )
     (path "/d76a4419-8eae-4607-a1e1-7beba823a94f/7f9a2efe-44a1-4570-9ea1-b6872feb7b40"
-      (reference "SW3") (unit 1) (value "RIGHT") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
+      (reference "SW3") (unit 1) (value "KMR211") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2")
     )
     (path "/9ce07a06-3e7b-4705-bb5d-f28af1161e98/925579f9-eeab-46d1-9561-82c969c3f604"
-      (reference "SW4") (unit 1) (value "RESET") (footprint "Button_Switch_SMD:Panasonic_EVQPUM_EVQPUD")
+      (reference "SW4") (unit 1) (value "EVQ-PUM02K") (footprint "Button_Switch_SMD:Panasonic_EVQPUM_EVQPUD")
     )
     (path "/0a703d67-08a6-447a-9b6b-5d644401d043/171af179-6dde-4ee0-985d-24c4c3478ee1"
       (reference "U1") (unit 1) (value "TLV61070A") (footprint "Package_TO_SOT_SMD:SOT-23-6")

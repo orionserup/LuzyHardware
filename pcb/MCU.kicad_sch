@@ -1514,7 +1514,7 @@
     (property "Reference" "SW4" (id 0) (at 62.23 83.8199 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "RESET" (id 1) (at 62.23 86.3599 90)
+    (property "Value" "EVQ-PUM02K" (id 1) (at 62.23 86.3599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Button_Switch_SMD:Panasonic_EVQPUM_EVQPUD" (id 2) (at 60.96 85.09 0)
