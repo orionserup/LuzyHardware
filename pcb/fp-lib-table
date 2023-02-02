@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Luzy")(type "KiCad")(uri "/home/orion/Documents/Sandbox/LuzyHardware/lib/Luzy.pretty")(options "")(descr ""))
+)
